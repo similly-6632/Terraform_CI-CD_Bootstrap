@@ -8,7 +8,7 @@ terraform {
   #  dynamodb_table = "aws-locks"
   #  encrypt        = true
   #}
-    required_providers {
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 2.36.0"
@@ -18,7 +18,7 @@ terraform {
 
 # Download any stable version in AWS provider of 2.36.0 or higher in 2.36 train
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
 
 # Call the seed_module to build our ADO seed info
